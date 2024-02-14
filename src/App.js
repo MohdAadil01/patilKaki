@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+// import Home from "./components/Home";
+import AboutPage from "./components/About";
+// import WhyConnectSection from "./components/Ahead";
+import TimeoutSection from "./components/TimeOut";
+// import CallToActionsSection from "./components/CTA";
+// import Form from "./components/Form";
+import Navbar from "./components/Navbar";
+import HeroSection from "./components/Home";
+import ResponsiveBoxes from "./components/Ahead";
+import ResponsiveComponent from "./components/CTA";
+import Form from "./components/Form";
+import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Navbar></Navbar>
+      <HeroSection />
+      <AboutPage />
+      <ResponsiveBoxes />
+      <TimeoutSection />
+      <ResponsiveComponent />
+      <Form />
     </div>
   );
 }
